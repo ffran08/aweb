@@ -1,0 +1,70 @@
+/* Francisco Miguel 9/11/2026 */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+
+
+.sobre-nosotros{
+   background-image: linear-gradient(to right, transparent 50%,#037bc0 50%, #037bc0 100%), url(./fotos/mueble.jfif);
+   background-size: 100%, 40rem; 
+   padding: 8rem 0;
+   background-repeat: no-repeat;
+   background-position: left center;
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+ .sobre-nosotros h2{
+   grid-column: 2/3;
+   text-align: center;
+   color: white;
+}
+ 
+ .seleccion{
+   font-size: 1.6rem;
+   padding: 2em;
+   background: linear-gradient(to right, rgb(23, 116, 11) 0%, rgba(19, 15, 248, 0.534) 50%, rgb(140, 0, 255) 100%);
+}
+section{
+   display: flex;
+   height: 300px;
+   cursor: url(./Cursor/cursor.cur), auto;
+}
+section img{
+   width: 0px;
+   flex-grow: 1;
+   object-fit: cover;
+   opacity: 0.5;
+   transition: 2s ease;
+}
+section img:hover{
+   width: 300px;
+   opacity: 1;
+   filter: contrast(100%);
+}
+section img:first-child{
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+section img:last-child{
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+h1{
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+   text-align: center;
+   cursor: url(./Cursor/cursor\ \(1\).cur), auto;
+}
+.muchas{
+   font-family: "Playwrite CZ", cursive;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: normal;
+}
+p{
+   text-align: center;
+}
